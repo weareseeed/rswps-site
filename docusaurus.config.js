@@ -8,8 +8,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
-  url: "https://weareseeed.github.io/rswps-site/",
-  baseUrl: "/",
+  url: "https://weareseeed.github.io",
+  baseUrl: "/rswps-site/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -78,37 +78,47 @@ const config = {
             ],
           },
           {
-            title: "Community",
+            title: "Company",
             items: [
               {
-                label: "Stack Overflow",
-                href: "https://stackoverflow.com/questions/tagged/docusaurus",
+                label: "GitHub",
+                href: "https://github.com/weareseeed",
               },
               {
-                label: "Discord",
-                href: "https://discordapp.com/invite/docusaurus",
-              },
-              {
-                label: "Twitter",
-                href: "https://twitter.com/docusaurus",
+                label: "About",
+                href: "https://seeed.us/team/",
               },
             ],
           },
           {
-            title: "More",
+            title: "Community",
             items: [
               {
-                label: "Blog",
-                to: "/blog",
+                label: "Instagram",
+                href: "https://www.instagram.com/seeedsocial/",
               },
               {
-                label: "GitHub",
-                href: "https://github.com/weareseeed/react-square-web-payments-sdk",
+                label: "LinkedIn",
+                href: "https://www.linkedin.com/company/seeedus/",
+              },
+              {
+                label: "Twitter",
+                href: "https://twitter.com/seeedsocial",
+              },
+              {
+                label: "Facebook",
+                href: "https://www.facebook.com/seeedsocial",
               },
             ],
           },
         ],
-        copyright: `Copyright © ${new Date().getFullYear()} Seeed, LLC. Built with Docusaurus.`,
+        logo: {
+          alt: "react-square-web-payments-sdk logo",
+          src: "img/logo.png",
+          href: "https://react-square-payments.weareseeed.com",
+          width: 64,
+        },
+        copyright: `Copyright © ${new Date().getFullYear()} Seeed, LLC — Florida, USA`,
       },
       prism: {
         theme: lightCodeTheme,
