@@ -8,13 +8,15 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
-  url: "https://your-docusaurus-test-site.com",
+  url: "https://weareseeed.github.io/rswps-site/",
   baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
   organizationName: "weareseeed",
   projectName: "rswps-site",
+  deploymentBranch: "gh-pages",
+  trailingSlash: false,
   presets: [
     [
       "classic",
