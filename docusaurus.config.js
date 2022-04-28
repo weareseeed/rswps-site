@@ -8,8 +8,8 @@ const darkCodeTheme = require("prism-react-renderer/themes/dracula");
 const config = {
   title: "My Site",
   tagline: "Dinosaurs are cool",
-  url: "https://weareseeed.github.io",
-  baseUrl: "/rswps-site/",
+  url: "http://react-square-payments.weareseeed.com/",
+  baseUrl: "/",
   onBrokenLinks: "throw",
   onBrokenMarkdownLinks: "warn",
   favicon: "img/favicon.ico",
@@ -41,6 +41,20 @@ const config = {
     ],
   ],
 
+  plugins: [
+    "@docusaurus/theme-live-codeblock",
+    [
+      "@docusaurus/plugin-ideal-image",
+      {
+        quality: 70,
+        max: 1030, // max resized image's size.
+        min: 640, // min resized image's size. if original is lower, use that size.
+        steps: 2, // the max number of images generated between min and max (inclusive)
+        disableInDev: false,
+      },
+    ],
+  ],
+
   themeConfig:
     /** @type {import('@docusaurus/preset-classic').ThemeConfig} */
     ({
@@ -53,9 +67,9 @@ const config = {
         items: [
           {
             type: "doc",
-            docId: "intro",
+            docId: "getting-started",
             position: "left",
-            label: "Tutorial",
+            label: "Docs",
           },
           { to: "/blog", label: "Blog", position: "left" },
           {
@@ -72,8 +86,8 @@ const config = {
             title: "Docs",
             items: [
               {
-                label: "Tutorial",
-                to: "/docs/intro",
+                label: "Docs",
+                to: "/docs",
               },
             ],
           },
@@ -116,13 +130,16 @@ const config = {
           alt: "react-square-web-payments-sdk logo",
           src: "img/logo.png",
           href: "https://react-square-payments.weareseeed.com",
-          width: 64,
+          width: 48,
         },
         copyright: `Copyright © ${new Date().getFullYear()} Seeed, LLC — Florida, USA`,
       },
       prism: {
         theme: lightCodeTheme,
         darkTheme: darkCodeTheme,
+      },
+      liveCodeBlock: {
+        playgroundPosition: "bottom",
       },
     }),
 };
