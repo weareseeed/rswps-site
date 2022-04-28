@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_weareseeed_react_square_payments_docs=self.webpackChunk_weareseeed_react_square_payments_docs||[]).push([[316],{6347:function(e){e.exports=JSON.parse('{"allTagsPath":"/rswps-site/blog/tags","name":"hello","count":2,"permalink":"/rswps-site/blog/tags/hello"}')}}]);

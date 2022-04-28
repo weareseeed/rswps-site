@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_weareseeed_react_square_payments_docs=self.webpackChunk_weareseeed_react_square_payments_docs||[]).push([[155],{9115:function(s){s.exports=JSON.parse('{"allTagsPath":"/rswps-site/blog/tags","name":"docusaurus","count":4,"permalink":"/rswps-site/blog/tags/docusaurus"}')}}]);

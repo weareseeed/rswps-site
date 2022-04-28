@@ -1,1 +1,0 @@
-"use strict";(self.webpackChunk_weareseeed_react_square_payments_docs=self.webpackChunk_weareseeed_react_square_payments_docs||[]).push([[937],{9891:function(e){e.exports=JSON.parse('{"allTagsPath":"/rswps-site/blog/tags","name":"facebook","count":1,"permalink":"/rswps-site/blog/tags/facebook"}')}}]);
