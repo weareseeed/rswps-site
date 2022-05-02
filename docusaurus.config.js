@@ -13,12 +13,13 @@ const themeConfig = {
     title: 'react-square-web-payments-sdk',
     logo: {
       alt: 'react-square-web-payments-sdk',
-      src: 'img/logo.png',
+      src: 'img/logo-black.svg',
+      srcDark: 'img/logo-white.svg',
     },
     items: [
       {
         type: 'doc',
-        docId: 'getting-started',
+        docId: 'introduction',
         position: 'left',
         label: 'Docs',
       },
@@ -79,8 +80,8 @@ const themeConfig = {
     ],
     logo: {
       alt: 'react-square-web-payments-sdk logo',
-      src: 'img/logo.png',
-      href: 'https://react-square-payments.weareseeed.com',
+      src: 'img/seeed-logo.svg',
+      href: 'https://seeed.us',
       width: 48,
     },
     copyright: `Copyright © ${new Date().getFullYear()} Seeed, LLC — Florida, USA`,
@@ -112,11 +113,11 @@ const config = {
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
         blog: {
-          editUrl: 'https://github.com/weareseeed/rswps-site/tree/main/blog/',
+          editUrl: 'https://github.com/weareseeed/rswps-site/tree/main/',
           showReadingTime: true,
         },
         docs: {
-          editUrl: 'https://github.com/weareseeed/rswps-site/tree/main/docs/',
+          editUrl: 'https://github.com/weareseeed/rswps-site/tree/main/',
           sidebarPath: require.resolve('./sidebars.js'),
         },
         sitemap: {
