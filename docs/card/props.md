@@ -39,7 +39,7 @@ export default function MyApp() {
 
 ## `callbacks`
 
-Adds an event listener to the instance of the Card element. You can see [**this page**](/card/callbacks) for more details.
+Adds an event listener to the instance of the Card element. You can see [**this page**](/docs/card/callbacks) for more details.
 
 ### Example
 
