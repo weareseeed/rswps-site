@@ -38,8 +38,12 @@ const themeConfig = {
         title: 'Docs',
         items: [
           {
-            label: 'Docs',
-            to: '/docs',
+            label: 'Getting Started',
+            to: '/docs/installation',
+          },
+          {
+            label: 'Credit Card',
+            to: '/docs/card/usage',
           },
         ],
       },
