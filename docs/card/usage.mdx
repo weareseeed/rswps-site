@@ -1,0 +1,52 @@
+---
+id: card-usage
+title: Credit card usage
+slug: /card/usage
+sidebar_label: Usage
+sidebar_position: 1
+---
+
+import { CreditCard } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Basic usage
+
+The Credit Card element makes it easy to accept payments and collect card data on your site. With minimal lines of code you can generate a secure card form that once submitted, generates a one-time-use token that can be used to create a Payment with the CreatePayment API.
+
+```tsx
+import { CreditCard } from 'react-square-web-payments-form';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CreditCard />
+    </PaymentForm>
+  );
+}
+```
+
+## Example
+
+:::caution Test
+
+**We will never store your card data.** But please use dummy data for testing.
+
+:::
+
+:::info
+
+After you hit the `Pay` button you can see the output on the console.
+
+:::
+
+This is how the form looks like:
+
+<PaymentForm>
+  <CreditCard
+    callbacks={{
+      cardBrandChanged(e) {
+        console.info(e);
+      },
+    }}
+  />
+</PaymentForm>

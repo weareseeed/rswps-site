@@ -1793,6 +1793,25 @@
     eval "^0.1.8"
     webpack-sources "^1.4.3"
 
+"@square/web-payments-sdk-types@^1.1.1":
+  version "1.32.0"
+  resolved "https://registry.yarnpkg.com/@square/web-payments-sdk-types/-/web-payments-sdk-types-1.32.0.tgz#a1dc5afa466119ce0a89de1865609ddeb7b41282"
+  integrity sha512-TksCKMspyl654IDhe/pHyuZ7xMXOg8F5gK/bsAdc3lH6s7GzCEKni88e7xElU7LLpSKFNfjNBpSRUa5JbXNJkA==
+  dependencies:
+    typescript "^4.1.0"
+
+"@square/web-sdk@^2.0.0":
+  version "2.0.0"
+  resolved "https://registry.yarnpkg.com/@square/web-sdk/-/web-sdk-2.0.0.tgz#ed0b87e27b2ce60e5d6c46def613c1a0d959ea15"
+  integrity sha512-RrJb1/ne5Ew0/VsNtOI7oXeXK2gONNQxYPP5BAQZ9+uuIFb6eX0GXPkE6XMRy/JLqy1Nqta9Y35rPdBwolQCgQ==
+  dependencies:
+    "@square/web-payments-sdk-types" "^1.1.1"
+
+"@stitches/react@^1.2.8":
+  version "1.2.8"
+  resolved "https://registry.yarnpkg.com/@stitches/react/-/react-1.2.8.tgz#954f8008be8d9c65c4e58efa0937f32388ce3a38"
+  integrity sha512-9g9dWI4gsSVe8bNLlb+lMkBYsnIKCZTmvqvDG+Avnn69XfmHZKiaMrx7cgTaddq7aTPPmXiTsbFcUy0xgI4+wA==
+
 "@svgr/babel-plugin-add-jsx-attribute@^6.0.0":
   version "6.0.0"
   resolved "https://registry.yarnpkg.com/@svgr/babel-plugin-add-jsx-attribute/-/babel-plugin-add-jsx-attribute-6.0.0.tgz#bd6d1ff32a31b82b601e73672a789cc41e84fe18"
@@ -7093,6 +7112,14 @@ react-simple-code-editor@^0.10.0:
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.10.0.tgz#73e7ac550a928069715482aeb33ccba36efe2373"
   integrity sha512-bL5W5mAxSW6+cLwqqVWY47Silqgy2DKDTR4hDBrLrUqC5BXc29YVx17l2IZk5v36VcDEq1Bszu2oHm1qBwKqBA==
 
+react-square-web-payments-sdk@^3.0.0-canary.22:
+  version "3.0.0-canary.22"
+  resolved "https://registry.yarnpkg.com/react-square-web-payments-sdk/-/react-square-web-payments-sdk-3.0.0-canary.22.tgz#885c171a88543ef679b517851fb66ec367dce885"
+  integrity sha512-e+gtqerr73u3RkDsQhOHM9Z2i4n/nrE/ULR+CSBNFN1lBxZzV3VSbRHIFv2nyecvkqqSo++r4G3MgFNVdMTGvw==
+  dependencies:
+    "@square/web-sdk" "^2.0.0"
+    "@stitches/react" "^1.2.8"
+
 react-textarea-autosize@^8.3.2:
   version "8.3.3"
   resolved "https://registry.yarnpkg.com/react-textarea-autosize/-/react-textarea-autosize-8.3.3.tgz#f70913945369da453fd554c168f6baacd1fa04d8"
@@ -8257,6 +8284,11 @@ typedarray-to-buffer@^3.1.5:
   integrity sha512-zdu8XMNEDepKKR+XYOXAVPtWui0ly0NtohUscw+UmaHiAWT8hrV1rr//H6V+0DvJ3OQ19S979M0laLfX8rm82Q==
   dependencies:
     is-typedarray "^1.0.0"
+
+typescript@^4.1.0:
+  version "4.6.4"
+  resolved "https://registry.yarnpkg.com/typescript/-/typescript-4.6.4.tgz#caa78bbc3a59e6a5c510d35703f6a09877ce45e9"
+  integrity sha512-9ia/jWHIEbo49HfjrLGfKbZSuWo9iTMwXO+Ca3pRsSpbsMbc7/IU8NKdCZVRRBafVPGnoJeFL76ZOAA84I9fEg==
 
 typescript@^4.6.3:
   version "4.6.3"
