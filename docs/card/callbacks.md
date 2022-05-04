@@ -6,7 +6,7 @@ sidebar_label: Callbacks
 sidebar_position: 3
 ---
 
-# `<CreditCard>` - Callbacks
+# Callbacks
 
 Adds an event listener to the instance of the Card element. The output of the events will look something like this:
 
