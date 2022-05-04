@@ -8,7 +8,7 @@
 
 /* You can override the default Infima variables here. */
 :root {
-  --ifm-font-family-base: 'Inter var';
+  --ifm-code-font-size: 95%;
   --ifm-color-primary: #003e96;
   --ifm-color-primary-dark: #003887;
   --ifm-color-primary-darker: #003580;
@@ -16,7 +16,10 @@
   --ifm-color-primary-light: #0044a5;
   --ifm-color-primary-lighter: #0047ad;
   --ifm-color-primary-lightest: #0051c3;
-  --ifm-code-font-size: 95%;
+  --ifm-font-family-base: 'Inter var';
+  --ifm-footer-background-color: #1b1b1b;
+  --ifm-footer-color: #e3e3e3;
+  --ifm-footer-link-color: #e3e3e3;
 }
 
 /* For readability concerns, you should choose a lighter palette in dark mode. */
@@ -28,6 +31,9 @@
   --ifm-color-primary-light: #83e2fc;
   --ifm-color-primary-lighter: #94e6fc;
   --ifm-color-primary-lightest: #c7f2fe;
+  --ifm-footer-background-color: #1b1b1b;
+  --ifm-footer-color: #e3e3e3;
+  --ifm-footer-link-color: #e3e3e3;
   --search-local-hit-active-color: var(--ifm-color-emphasis-100);
 }
 

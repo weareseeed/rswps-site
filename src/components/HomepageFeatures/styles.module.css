@@ -1,11 +1,35 @@
 .features {
-  display: flex;
   align-items: center;
+  background-color: #fff;
+  color: #000;
+  display: flex;
   padding: 2rem 0;
   width: 100%;
 }
 
+.containerItem {
+  margin: 0 auto;
+  max-width: 304px;
+  width: 100%;
+}
+
+.title {
+  font-size: 20px;
+  font-weight: 700;
+  margin-bottom: 20px;
+  text-align: center;
+}
+
 .featureSvg {
-  height: 200px;
-  width: 200px;
+  height: 88px;
+  margin-bottom: 20px;
+  width: auto;
+}
+
+.featureSvgFull {
+  width: 100%;
+}
+
+.text {
+  font-size: 18px;
 }
