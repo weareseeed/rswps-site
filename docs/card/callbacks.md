@@ -1,6 +1,6 @@
 ---
 id: card-callbacks
-title: Credit card callbacks
+title: CreditCard - Callbacks
 slug: /card/callbacks
 sidebar_label: Callbacks
 sidebar_position: 3

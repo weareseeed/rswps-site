@@ -1,6 +1,6 @@
 ---
 id: card-props
-title: Available credit card props
+title: CreditCard - Props
 slug: /card/props
 sidebar_label: Props
 sidebar_position: 2
