@@ -54,13 +54,13 @@ pnpm add react-square-web-payments-sdk
 Wrap your app in our provider to be able to access to the SDK in any part of your app.
 
 ```tsx
-import { PaymentsForm } from 'react-square-web-payments-sdk';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function App() {
   return (
-    <PaymentsForm {...props}>
+    <PaymentForm {...props}>
       <MyApp />
-    </PaymentsForm>
+    </PaymentForm>
   );
 }
 ```

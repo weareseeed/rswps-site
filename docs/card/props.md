@@ -6,7 +6,7 @@ sidebar_label: Props
 sidebar_position: 2
 ---
 
-# Available Props
+# `<CreditCard>` - Props
 
 ## `buttonProps`
 
