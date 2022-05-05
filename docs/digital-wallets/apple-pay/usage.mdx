@@ -1,0 +1,48 @@
+---
+id: apple-pay-usage
+title: ApplePay - Basic Usage
+slug: /apple-pay/usage
+sidebar_label: Usage
+sidebar_position: 1
+---
+
+import { ApplePay } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Basic usage
+
+Requests a payment nonce for a payment card stored in an Apple Pay digital wallet.
+
+```tsx
+import { ApplePay, PaymentForm } from 'react-square-web-payments-form';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <ApplePay />
+    </PaymentForm>
+  );
+}
+```
+
+:::info
+
+You must follow the following guide to use Apple Pay https://developer.squareup.com/docs/web-payments/apple-pay#prerequisites-and-assumptions
+
+:::
+
+:::info
+
+This payment method will only render on Safari browsers that support Apple Pay.
+
+If you can't see the payment method below or get this error on the console:
+
+`Initializing Apple Pay failed PaymentMethodUnsupportedError`
+
+You must try with Safari.
+
+:::
+
+<PaymentForm>
+  <ApplePay />
+</PaymentForm>

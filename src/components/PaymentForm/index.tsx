@@ -9,6 +9,14 @@ export default function PaymentForm({ children }: { children: React.ReactNode })
       cardTokenizeResponseReceived={(token, buyer) => {
         console.info({ token, buyer });
       }}
+      createPaymentRequest={() => ({
+        countryCode: 'US',
+        currencyCode: 'USD',
+        total: {
+          amount: '100',
+          label: 'Total',
+        },
+      })}
       createVerificationDetails={() => ({
         amount: '1.00',
         /* collected from the buyer */
