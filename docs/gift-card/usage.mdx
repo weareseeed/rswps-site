@@ -1,0 +1,44 @@
+---
+id: gift-card-usage
+title: GiftCard - Basic Usage
+slug: /gift-card/usage
+sidebar_label: Usage
+sidebar_position: 1
+---
+
+import { GiftCard } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Basic usage
+
+Take a Gift Card payment
+
+```tsx
+import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <GiftCard />
+    </PaymentForm>
+  );
+}
+```
+
+:::caution Test
+
+**We will never store your gift card data.** But please use dummy data for testing.
+
+:::
+
+:::info
+
+After you hit the `Pay with Gift Card` button you can see the output on the console.
+
+:::
+
+This is how the form looks like:
+
+<PaymentForm>
+  <GiftCard />
+</PaymentForm>

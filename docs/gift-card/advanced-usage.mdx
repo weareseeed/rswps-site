@@ -1,0 +1,107 @@
+---
+id: gift-card-advanced-usage
+title: GiftCard - Advanced Usage
+slug: /gift-card/advanced-usage
+sidebar_label: Advanced Usage
+sidebar_position: 4
+---
+
+import { GiftCard } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Advanced Usage
+
+## Styling
+
+This example illustrates how to use the `<GiftCard>` and extend the styles of the card form.
+
+The `css` property inside the `buttonProps` object is used to style the `<button>` element, since we are using CSS-in-JS is easy to extend all the styles that we want and even use a syntax that is almost like SASS.
+
+The `style` property comes directly from Square and is used to pass the styles to the `<GiftCard>` input, Square use it's own set of classes to be styled, and you can only use the classes that are provided by Square.
+
+```tsx
+import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <GiftCard
+        buttonProps={{
+          css: {
+            "[data-theme='dark'] &": {
+              backgroundColor: '#61dafb',
+              color: 'var(--ifm-color-emphasis-100)',
+              '&:hover': {
+                backgroundColor: '#0091ea',
+              },
+            },
+            backgroundColor: '#771520',
+            fontSize: '14px',
+            color: '#fff',
+            '&:hover': {
+              backgroundColor: '#530f16',
+            },
+          },
+        }}
+        style={{
+          input: {
+            fontSize: '14px',
+          },
+          'input::placeholder': {
+            color: '#771520',
+          },
+        }}
+      />
+    </PaymentForm>
+  );
+}
+```
+
+:::caution Test
+
+**We will never store your gift card data.** But please use dummy data for testing.
+
+:::
+
+:::info
+
+After you hit the `Pay with Gift Card` button you can see the output on the console.
+
+:::
+
+This is how the form looks like:
+
+<PaymentForm>
+  <GiftCard
+    callbacks={{
+      cardBrandChanged(e) {
+        console.info(e);
+      },
+    }}
+    buttonProps={{
+      css: {
+        "[data-theme='dark'] &": {
+          backgroundColor: '#61dafb',
+          color: 'var(--ifm-color-emphasis-100)',
+          '&:hover': {
+            backgroundColor: '#0091ea',
+          },
+        },
+        backgroundColor: '#771520',
+        fontSize: '14px',
+        color: '#fff',
+        '&:hover': {
+          backgroundColor: '#530f16',
+        },
+      },
+    }}
+    style={{
+      input: {
+        fontSize: '14px',
+      },
+      'input::placeholder': {
+        color: '#771520',
+      },
+    }}
+  />
+</PaymentForm>
