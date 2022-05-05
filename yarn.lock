@@ -7422,10 +7422,10 @@ react-simple-code-editor@^0.10.0:
   resolved "https://registry.yarnpkg.com/react-simple-code-editor/-/react-simple-code-editor-0.10.0.tgz#73e7ac550a928069715482aeb33ccba36efe2373"
   integrity sha512-bL5W5mAxSW6+cLwqqVWY47Silqgy2DKDTR4hDBrLrUqC5BXc29YVx17l2IZk5v36VcDEq1Bszu2oHm1qBwKqBA==
 
-react-square-web-payments-sdk@^3.0.0-canary.24:
-  version "3.0.0-canary.24"
-  resolved "https://registry.yarnpkg.com/react-square-web-payments-sdk/-/react-square-web-payments-sdk-3.0.0-canary.24.tgz#36abb391b552cf8ffb1a8d26edf2e6e0f4134f6b"
-  integrity sha512-eYH/6EhOqcYzThPkxGZ1QFxYdFgHWVPGXMcGgX68Lpaui81xHWc+b+QnRFNEzMKEwlDU4xOnb+/GJARs+P7Y9w==
+react-square-web-payments-sdk@^3.0.0-canary.25:
+  version "3.0.0-canary.25"
+  resolved "https://registry.yarnpkg.com/react-square-web-payments-sdk/-/react-square-web-payments-sdk-3.0.0-canary.25.tgz#f514a3992ed011b9a134f46f1ab23231e212148b"
+  integrity sha512-pdmq5wOf/n/u8qKaKAJnUqAPfzF1DBPtPavi+/37OaGV0+2H1Sx1nZnA1VW49BvjJjZSudgYjni6WVX7HhKCWA==
   dependencies:
     "@square/web-sdk" "^2.0.0"
     "@stitches/react" "^1.2.8"
