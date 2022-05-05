@@ -45,6 +45,22 @@ const themeConfig = {
             label: 'Credit Card',
             to: '/docs/card/usage',
           },
+          {
+            label: 'ACH',
+            to: '/docs/ach/usage',
+          },
+          {
+            label: 'Apple Pay',
+            to: '/docs/apple-pay/usage',
+          },
+          {
+            label: 'Google Pay',
+            to: '/docs/google-pay/usage',
+          },
+          {
+            label: 'Gift Card',
+            to: '/docs/gift-card/usage',
+          },
         ],
       },
       {
