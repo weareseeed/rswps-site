@@ -1,0 +1,33 @@
+---
+id: google-pay-usage
+title: GooglePay - Basic Usage
+slug: /google-pay/usage
+sidebar_label: Usage
+sidebar_position: 1
+---
+
+import { GooglePay } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Basic usage
+
+Google Pay supports taking payments via credit cards. Utilizing the PaymentRequest object, you can handle Shipping Option selection, as well as collect Shipping and Billing addresses.
+
+```tsx
+import { GooglePay, PaymentForm } from 'react-square-web-payments-form';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <GooglePay />
+    </PaymentForm>
+  );
+}
+```
+
+Different variations of the Google Pay component are available:
+
+<PaymentForm>
+  <GooglePay buttonColor="black" buttonType="long" />
+  <GooglePay buttonColor="white" buttonType="short" />
+</PaymentForm>
