@@ -1,0 +1,53 @@
+---
+id: ach-usage
+title: ACH - Basic Usage
+slug: /ach/usage
+sidebar_label: Usage
+sidebar_position: 1
+---
+
+import { Ach } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Basic usage
+
+Square supports instant authentication through [Plaid](https://plaid.com/products/auth) for verifying a buyer's bank account before making an ACH payment. Plaid lets your application quickly authenticate the bank account and uses the Web Payments SDK to connect to the ACH network to accept payments.
+
+```tsx
+import { Ach, PaymentForm } from 'react-square-web-payments-form';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <Ach accountHolderName="John Doe" redirectURI="https://example.com/" transactionId="12345" />
+    </PaymentForm>
+  );
+}
+```
+
+:::caution Test
+
+**We will never store your account data.** But please use dummy data for testing.
+
+:::
+
+:::info
+
+After you hit the `Pay with Direct debit (ACH)` button you can see the output on the console.
+
+:::
+
+This is how the button looks like:
+
+<PaymentForm>
+  <Ach
+    accountHolderName="John Doe"
+    redirectURI="https://example.com/"
+    transactionId="12345"
+    callbacks={{
+      open(data) {
+        console.log('open', data);
+      },
+    }}
+  />
+</PaymentForm>
