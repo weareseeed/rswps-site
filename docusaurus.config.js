@@ -67,6 +67,10 @@ const themeConfig = {
             label: 'Gift Card',
             to: '/docs/gift-card/usage',
           },
+          {
+            label: 'Afterpay/Clearpay',
+            to: '/docs/afterpay/usage',
+          },
         ],
       },
       {
