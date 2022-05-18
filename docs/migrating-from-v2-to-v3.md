@@ -4,7 +4,7 @@ title: Migrating from v2 to v3
 sidebar_position: 99
 ---
 
-Since we launch our v2 we have made some improvements and added new features, in order to be able to migrate from v2 to v3 you need to do some changes to your code.
+Since we launched our v2 we have made some improvements and added new features. To migrate from v2 to v3 you need to make some changes to your code.
 
 ```diff
 - import SquarePaymentsForm, { CreditCardInput } from 'react-square-web-payments-sdk'
@@ -22,7 +22,7 @@ const MyPaymentForm = () => (
 export default MyPaymentForm;
 ```
 
-But also we change the way we pass callbacks to the credit card input.
+But we also changed the way we pass callbacks to the credit card input.
 
 ```diff
 <CreditCard
@@ -33,4 +33,4 @@ But also we change the way we pass callbacks to the credit card input.
 />
 ```
 
-And that's all! The rest of the new features can be seen in all the docs and the examples.
+And that's all! The rest of the new features can be seen in all the docs and examples.

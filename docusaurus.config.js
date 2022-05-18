@@ -18,14 +18,21 @@ const themeConfig = {
     },
     items: [
       {
-        type: 'doc',
-        docId: 'introduction',
-        position: 'left',
         label: 'Docs',
+        to: '/docs',
+        position: 'left',
+        activeBaseRegex: '/docs$',
+      },
+      {
+        label: 'Migrating from v2 to v3',
+        to: '/docs/migrating-from-v2-to-v3',
+        position: 'left',
+        activeBaseRegex: '/docs/migrating-from-v2-to-v3$',
       },
       {
         href: 'https://github.com/weareseeed/react-square-web-payments-sdk',
-        label: 'GitHub',
+        'aria-label': 'GitHub',
+        className: 'header-github-link',
         position: 'right',
       },
     ],
