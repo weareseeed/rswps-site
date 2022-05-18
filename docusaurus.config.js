@@ -23,7 +23,6 @@ const themeConfig = {
         position: 'left',
         label: 'Docs',
       },
-      { type: 'docSidebar', sidebarId: 'guides', label: 'Guides', position: 'left' },
       {
         href: 'https://github.com/weareseeed/react-square-web-payments-sdk',
         label: 'GitHub',
