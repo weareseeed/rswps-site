@@ -20,7 +20,7 @@ Remember that you need to wrap your application in the `<PaymentForm>` component
 Identifies the calling form with a verified application ID generated from the [Square Application Dashboard](https://squareup.com/login?app=developer)
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp() {
   return (
@@ -36,7 +36,7 @@ export default MyApp() {
 Invoked when payment form receives the result of a tokenize generation request. The result will be a valid credit card or wallet token, or an error.
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp() {
   return (
@@ -57,7 +57,7 @@ export default MyApp() {
 The children of the `<PaymentForm>` component.
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp(props) {
   return (
@@ -73,7 +73,7 @@ export default MyApp(props) {
 Identifies the location of the merchant that is taking the payment. Obtained from the [Square Application Dashboard](https://squareup.com/login?app=developer) - Locations tab.
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp() {
   return (
@@ -93,7 +93,7 @@ These props applies for Apple Pay, Google Pay and Afterpay/Clearpay
 Encapsulates the details of an Apple Pay, Google Pay, or Afterpay/Clearpay request for payment and provides a means of listening for shipping option and shipping contact changes via event listeners.
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp() {
   return (
@@ -159,7 +159,7 @@ export default MyApp() {
 If you want to make **Strong Customer Authentication** (we recommend it), you can use the verification details parameter, passed to the `payments.verifyBuyer()` function, for cases in which he buyer is being charged or the card is being stored on file.
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp() {
   return (
@@ -193,7 +193,7 @@ export default MyApp() {
 The props that will be passed to the wrapper element element.
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp() {
   return (
@@ -215,7 +215,7 @@ Override the default payment form props. Available options are:
 - `scriptSrc`: The URL of the Square Payment SDK script.
 
 ```tsx
-import { PaymentForm } from 'react-square-web-payments-form';
+import { PaymentForm } from 'react-square-web-payments-sdk';
 
 export default MyApp() {
   return (

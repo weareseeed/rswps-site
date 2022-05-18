@@ -1,0 +1,255 @@
+---
+id: afterpay-props
+title: Afterpay - Props
+slug: /afterpay/props
+sidebar_label: Props
+sidebar_position: 2
+---
+
+import { Afterpay, AfterpayMessage, AfterpayProvider, AfterpayWidget, Divider } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Props
+
+## `<Afterpay />` or `<AfterpayButton />`
+
+### `buttonColor`
+
+Color of the button that initiates the Afterpay/Clearpay flow. Possible values are: `black` and `mint`.
+
+```tsx
+import { Afterpay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <Afterpay buttonColor="black" />
+    </PaymentForm>
+  );
+}
+```
+
+#### Example
+
+<PaymentForm>
+  <Afterpay buttonColor="black" id="rswps-button-color-black" />
+  <Divider css={{ height: 0, margin: '12px 0px' }} spanProps={{ css: { display: 'none' } }} />
+  <Afterpay buttonColor="mint" id="rswps-button-color-mint" />
+</PaymentForm>
+
+### `buttonType`
+
+The flavor of button to use for your Afterpay/Clearpay flow. This will modify the text. Possible values are: `checkout_with_afterpay`, `buy_now_with_afterpay` and `place_order_with_afterpay`.
+
+```tsx
+import { Afterpay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <Afterpay buttonType="buy_now_with_afterpay" />
+    </PaymentForm>
+  );
+}
+```
+
+#### Example
+
+<PaymentForm>
+  <Afterpay buttonType="checkout_with_afterpay" id="rswps-button-type-checkout_with_afterpay" />
+  <Divider css={{ height: 0, margin: '12px 0px' }} spanProps={{ css: { display: 'none' } }} />
+  <Afterpay buttonType="buy_now_with_afterpay" id="rswps-button-type-buy_now_with_afterpay" />
+  <Divider css={{ height: 0, margin: '12px 0px' }} spanProps={{ css: { display: 'none' } }} />
+  <Afterpay buttonType="place_order_with_afterpay" id="rswps-button-type-place_order_with_afterpay" />
+</PaymentForm>
+
+### `finalCtaButtonType`
+
+The text for the completion button within the Afterpay/Clearpay CTA. Possible values are: `review_my_order` and `buy_now`.
+
+```tsx
+import { Afterpay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <Afterpay finalCtaButtonType="buy_now" />
+    </PaymentForm>
+  );
+}
+```
+
+### `Button`
+
+Option to use a custom button, as opposed to the provided Afterpay/Clearpay buttons. If true this will ignore all the above options.
+
+```tsx
+import { Afterpay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <Afterpay Button={() => <MyCustomButton />} />
+    </PaymentForm>
+  );
+}
+```
+
+## `<AfterpayMessage />`
+
+### `badgeTheme`
+
+See Afterpay/Clearpay's [Badge Themes](https://developers.afterpay.com/afterpay-online/docs/style-installment-messaging#badge-themes) documentation.
+
+Possible values are: `black-on-mint`, `black-on-white`, `mint-on-black` and `white-on-black`.
+
+```tsx
+import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <AfterpayProvider>
+        <AfterpayMessage badgeTheme="black-on-mint" />
+      </AfterpayProvider>
+    </PaymentForm>
+  );
+}
+```
+
+#### Example
+
+<PaymentForm>
+  <AfterpayProvider>
+    <AfterpayMessage id="rswps-black-on-mint" badgeTheme="black-on-mint" />
+    <AfterpayMessage id="rswps-black-on-white" badgeTheme="black-on-white" />
+    <AfterpayMessage id="rswps-mint-on-black" badgeTheme="mint-on-black" />
+    <AfterpayMessage id="rswps-white-on-black" badgeTheme="white-on-black" />
+  </AfterpayProvider>
+</PaymentForm>
+
+### `modalLinkStyle`
+
+The style of the button used to display the information modal. See Afterpay/Clearpay's [Customize Text](https://developers.afterpay.com/afterpay-online/docs/advanced-configuration#customize-text) documentation.
+
+Possible values are: `circled-info-icon`, `circled-question-icon`, `learn-more-text`, `more-info-text` and `none`.
+
+```tsx
+import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <AfterpayProvider>
+        <AfterpayMessage modalLinkStyle="circled-info-icon" />
+      </AfterpayProvider>
+    </PaymentForm>
+  );
+}
+```
+
+#### Example
+
+<PaymentForm>
+  <AfterpayProvider>
+    <AfterpayMessage id="rswps-circled-info-icon" modalLinkStyle="circled-info-icon" />
+    <AfterpayMessage id="rswps-circled-question-icon" modalLinkStyle="circled-question-icon" />
+    <AfterpayMessage id="rswps-learn-more-text" modalLinkStyle="learn-more-text" />
+    <AfterpayMessage id="rswps-more-info-text" modalLinkStyle="more-info-text" />
+    <AfterpayMessage id="rswps-none" modalLinkStyle="none" />
+  </AfterpayProvider>
+</PaymentForm>
+
+### `modalTheme`
+
+Theme for the information modal. See Afterpay/Clearpay's [Modal Themes](https://developers.afterpay.com/afterpay-online/docs/style-installment-messaging#modal-themes) documentation.
+
+Possible values are: `mint` and `white`.
+
+```tsx
+import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <AfterpayProvider>
+        <AfterpayMessage modalTheme="mint" />
+      </AfterpayProvider>
+    </PaymentForm>
+  );
+}
+```
+
+#### Example
+
+:::tip
+
+Click on the button to see the modal.
+
+:::
+
+<PaymentForm>
+  <AfterpayProvider>
+    <AfterpayMessage id="rswps-modal-theme-mint" modalTheme="mint" />
+    <AfterpayMessage id="rswps-modal-theme-white" badgeTheme="black-on-white" modalTheme="white" />
+  </AfterpayProvider>
+</PaymentForm>
+
+### `size`
+
+The size of the text.
+
+Possible values are: `xs`, `sm`, `md` and `lg`.
+
+```tsx
+import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <AfterpayProvider>
+        <AfterpayMessage size="xs" />
+      </AfterpayProvider>
+    </PaymentForm>
+  );
+}
+```
+
+<PaymentForm>
+  <AfterpayProvider>
+    <AfterpayMessage id="rswps-size-xs" size="xs" />
+    <AfterpayMessage id="rswps-size-sm" size="sm" />
+    <AfterpayMessage id="rswps-size-md" size="md" />
+    <AfterpayMessage id="rswps-size-lg" size="lg" />
+  </AfterpayProvider>
+</PaymentForm>
+
+## `<AfterpayWidget />`
+
+### `includeBranding`
+
+Include the afterpay logo in the widget. Default `false`.
+
+```tsx
+import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <AfterpayProvider>
+        <AfterpayWidget />
+      </AfterpayProvider>
+    </PaymentForm>
+  );
+}
+```
+
+#### Eample
+
+<PaymentForm>
+  <AfterpayProvider>
+    <AfterpayWidget id="rswps-widget-include-not-branding" />
+    <Divider css={{ height: 0, margin: '12px 0px' }} spanProps={{ css: { display: 'none' } }} />
+    <AfterpayWidget id="rswps-widget-include-branding" includeBranding />
+  </AfterpayProvider>
+</PaymentForm>

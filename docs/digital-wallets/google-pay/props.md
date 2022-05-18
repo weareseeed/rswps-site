@@ -15,7 +15,7 @@ Set the button background color to black or white. For more details about the av
 Available values: `default`, `black` & `white`.
 
 ```tsx
-import { GooglePay, PaymentForm } from 'react-square-web-payments-form';
+import { GooglePay, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -33,7 +33,7 @@ Set fitting mode to dynamically size button or fixed size. For more details abou
 Available values: `static` & `fill`.
 
 ```tsx
-import { GooglePay, PaymentForm } from 'react-square-web-payments-form';
+import { GooglePay, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -51,7 +51,7 @@ Render a long or short button. For more details about the available options, see
 Available values: `long` & `short`.
 
 ```tsx
-import { GooglePay, PaymentForm } from 'react-square-web-payments-form';
+import { GooglePay, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (

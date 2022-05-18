@@ -15,7 +15,7 @@ Props to be passed to the `<button>` element. The following props are not suppor
 But in addition to this we offer a `isLoading` prop to control the loading state of the button a.k.a disabling the button.
 
 ```tsx
-import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   const onClick = () => {
@@ -40,7 +40,7 @@ export default function MyApp() {
 Adds an event listener to the GiftCard instance. You can see [**this page**](/docs/gift-card/callbacks) for more details.
 
 ```tsx
-import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -65,7 +65,7 @@ export default function MyApp() {
 Make it possible to put any component inside. If children is/are given then `render` is not applied.
 
 ```tsx
-import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -81,7 +81,7 @@ export default function MyApp() {
 Sets the DOM focus of one of the input fields within the GiftCard form.
 
 ```tsx
-import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -99,7 +99,7 @@ export default function MyApp() {
 Render card form with input labels adjacent to corresponding input field
 
 ```tsx
-import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -115,7 +115,7 @@ export default function MyApp() {
 Make it possible to put any component inside. If render is/are given then `children` and `buttonProps` is not applied.
 
 ```tsx
-import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -132,7 +132,7 @@ export default function MyApp() {
 A map of .css classes and values that customize the style of the input fields
 
 ```tsx
-import { GiftCard, PaymentForm } from 'react-square-web-payments-form';
+import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (

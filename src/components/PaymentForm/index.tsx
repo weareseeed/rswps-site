@@ -12,6 +12,17 @@ export default function PaymentForm({ children }: { children: React.ReactNode })
       createPaymentRequest={() => ({
         countryCode: 'US',
         currencyCode: 'USD',
+        pickupContact: {
+          addressLines: ['123 Main St'],
+          city: 'San Francisco',
+          countryCode: 'US',
+          email: 'john@doe.com',
+          familyName: 'Doe',
+          givenName: 'John',
+          phone: '4155555555',
+          postalCode: '94107',
+          state: 'CA',
+        },
         total: {
           amount: '100',
           label: 'Total',

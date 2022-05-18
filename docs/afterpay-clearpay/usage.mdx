@@ -1,0 +1,79 @@
+---
+id: afterpay-usage
+title: Afterpay - Basic Usage
+slug: /afterpay/usage
+sidebar_label: Usage
+sidebar_position: 1
+---
+
+import {
+  Afterpay,
+  AfterpayButton,
+  AfterpayMessage,
+  AfterpayProvider,
+  AfterpayWidget,
+} from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Basic usage
+
+Take an Afterpay/Clearpay payment
+
+```tsx
+import { Afterpay, AfterpayButton, AfterpayMessage, AfterpayWidget, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm
+      createPaymentRequest={() => ({
+        // ...
+        // pickupContact information is required for Afterpay
+        pickupContact: {
+          addressLines: ['123 Main St'],
+          city: 'San Francisco',
+          countryCode: 'US',
+          email: 'john@doe.com',
+          familyName: 'Doe',
+          givenName: 'John',
+          phone: '4155555555',
+          postalCode: '94107',
+          state: 'CA',
+        },
+        // ...
+      })}
+    >
+      <AfterpayProvider>
+        <AfterpayButton />
+        <AfterpayMessage />
+        <AfterpayWidget />
+      </AfterpayProvider>
+
+      {/* or simply */}
+
+      <Afterpay />
+    </PaymentForm>
+  );
+}
+```
+
+:::caution Test
+
+**We will never store your afterpay data.** But please use dummy data for testing.
+
+:::
+
+:::info
+
+After you hit the `Buy now with afterpay` button you can see the output on the console.
+
+:::
+
+This is how will looks like with the three elements:
+
+<PaymentForm>
+  <AfterpayProvider>
+    <AfterpayButton />
+    <AfterpayMessage />
+    <AfterpayWidget />
+  </AfterpayProvider>
+</PaymentForm>

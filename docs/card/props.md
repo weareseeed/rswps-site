@@ -15,7 +15,7 @@ Props to be passed to the `<button>` element. The following props are not suppor
 But in addition to this we offer a `isLoading` prop to control the loading state of the button a.k.a disabling the button.
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   const onClick = () => {
@@ -40,7 +40,7 @@ export default function MyApp() {
 Adds an event listener to the instance of the Card element. You can see [**this page**](/docs/card/callbacks) for more details.
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -65,7 +65,7 @@ export default function MyApp() {
 Make it possible to put any component inside. If children is/are given then `render` is not applied.
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -83,7 +83,7 @@ Sets the DOM focus of one of the input fields within the credit card form.
 For more details about the available options, see [CardFieldNames](https://developer.squareup.com/reference/sdks/web/payments/enums/CardFieldNames).
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -101,7 +101,7 @@ export default function MyApp() {
 Render card form with input labels adjacent to corresponding input field
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -117,7 +117,7 @@ export default function MyApp() {
 Sets an initial value of the postal code input field in the card form.
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -137,7 +137,7 @@ The Card component normally automatically resizes based on the size of the buyer
 This method `recalculateSize()` can be used to handle this edge case by forcing the Card component to recalculate its size and display appropriately for mobile or desktop.
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   // Will trigger recalculation of the Card component's size.
@@ -158,7 +158,7 @@ export default function MyApp() {
 Make it possible to put any component inside. If render is/are given then `children` and `buttonProps` is not applied.
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -175,7 +175,7 @@ export default function MyApp() {
 A map of .css classes and values that customize the style of the input fields
 
 ```tsx
-import { CreditCard } from 'react-square-web-payments-form';
+import { CreditCard } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (

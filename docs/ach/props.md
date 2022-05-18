@@ -13,7 +13,7 @@ sidebar_position: 2
 Given name and surname of the bank account holder
 
 ```tsx
-import { Ach, PaymentForm } from 'react-square-web-payments-form';
+import { Ach, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -29,7 +29,7 @@ export default function MyApp() {
 The URI to redirect back to after Plaid authentication is complete.
 
 ```tsx
-import { Ach, PaymentForm } from 'react-square-web-payments-form';
+import { Ach, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -45,7 +45,7 @@ export default function MyApp() {
 Identifier for the transaction to return to after redirect, appended as a query parameter to the redirectURI.
 
 ```tsx
-import { Ach, PaymentForm } from 'react-square-web-payments-form';
+import { Ach, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -61,7 +61,7 @@ export default function MyApp() {
 Adds an event listener to the instance of the Card element. You can see [**this page**](/docs/ach/callbacks) for more details.
 
 ```tsx
-import { Ach, PaymentForm } from 'react-square-web-payments-form';
+import { Ach, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -91,7 +91,7 @@ Props to be passed to the `<button>` element. The following props are not suppor
 But in addition to this we offer a `isLoading` prop to control the loading state of the button a.k.a disabling the button.
 
 ```tsx
-import { Ach, PaymentForm } from 'react-square-web-payments-form';
+import { Ach, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   const onClick = () => {
@@ -119,7 +119,7 @@ export default function MyApp() {
 The children of the button to override icon and text, you can put any component inside the button.
 
 ```tsx
-import { Ach, PaymentForm } from 'react-square-web-payments-form';
+import { Ach, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
@@ -137,7 +137,7 @@ export default function MyApp() {
 Props to be passed to the `<svg>` element.
 
 ```tsx
-import { Ach, PaymentForm } from 'react-square-web-payments-form';
+import { Ach, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
