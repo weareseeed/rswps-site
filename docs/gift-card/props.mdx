@@ -6,6 +6,9 @@ sidebar_label: Props
 sidebar_position: 2
 ---
 
+import { GiftCard } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
 # Props
 
 ## `buttonProps`
@@ -80,15 +83,15 @@ export default function MyApp() {
 
 Sets the DOM focus of one of the input fields within the GiftCard form.
 
+The only supported value is `cardNumber`.
+
 ```tsx
 import { GiftCard, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
     <PaymentForm>
-      <GiftCard
-        focus="cardNumber" // Can be cardNumber, cvv, expirationDate or postalCode
-      />
+      <GiftCard focus="cardNumber" />
     </PaymentForm>
   );
 }
@@ -109,6 +112,12 @@ export default function MyApp() {
   );
 }
 ```
+
+#### Example
+
+<PaymentForm>
+  <GiftCard id="rswps-gift-card-card-include-input-labels" includeInputLabels />
+</PaymentForm>
 
 ## `render()`
 
