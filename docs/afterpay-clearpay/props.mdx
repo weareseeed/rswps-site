@@ -224,6 +224,85 @@ export default function MyApp() {
   </AfterpayProvider>
 </PaymentForm>
 
+## `<AfterpayProvider />`
+
+### `onShippingAddressChange()`
+
+Occurs when a buyer chooses a shipping address in Afterpay/Clearpay.
+
+It is required for you to subscribe to this event if shipping if marked a required.
+
+```tsx
+import { AfterpayButton, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <AfterpayProvider
+        onShippingAddressChange={(contact) => {
+          return {
+            shippingOptions: [
+              {
+                id: 'shippingOption1',
+                label: 'Free Shipping',
+                amount: '0.00',
+                total: '27.50', // Line Items + Discounts + Taxes + Shipping
+                taxLineItems: [
+                  {
+                    id: 'taxItem1',
+                    label: 'Taxes',
+                    amount: '2.50',
+                  },
+                ],
+              },
+              {
+                id: 'shippingOption2',
+                label: 'Express Shipping',
+                amount: '10.00',
+                total: '38.50', // Line Items + Discounts + Taxes + Shipping
+                taxLineItems: [
+                  {
+                    id: 'taxItem1',
+                    label: 'Taxes',
+                    amount: '3.50',
+                  },
+                ],
+              },
+            ],
+          };
+        }}
+      >
+        <AfterpayButton />
+      </AfterpayProvider>
+    </PaymentForm>
+  );
+}
+```
+
+### `onShippingOptionChange()`
+
+Occurs when a buyer chooses a shipping option in Afterpay/Clearpay.
+
+Subscribe to this event if you want to be alerted of shipping options changes. This event if informational only, and does not update the payment request.
+
+```tsx
+import { AfterpayButton, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <AfterpayProvider
+        onShippingOptionChange={(option) => {
+          console.info('Shipping option changed to', option);
+        }}
+      >
+        <AfterpayButton />
+      </AfterpayProvider>
+    </PaymentForm>
+  );
+}
+```
+
 ## `<AfterpayWidget />`
 
 ### `includeBranding`
@@ -231,7 +310,7 @@ export default function MyApp() {
 Include the afterpay logo in the widget. Default `false`.
 
 ```tsx
-import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
+import { AfterpayProvider, AfterpayWidget, PaymentForm } from 'react-square-web-payments-sdk';
 
 export default function MyApp() {
   return (
