@@ -6,13 +6,16 @@ sidebar_label: Props
 sidebar_position: 2
 ---
 
+import { Divider, GooglePay } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
 # Props
 
 ## `buttonColor`
 
 Set the button background color to black or white. For more details about the available options, see [GooglePayButtonColor](https://developer.squareup.com/reference/sdks/web/payments/enums/GooglePayButtonColor).
 
-Available values: `default`, `black` & `white`.
+Available values: `default`, `black` or `white`.
 
 ```tsx
 import { GooglePay, PaymentForm } from 'react-square-web-payments-sdk';
@@ -26,11 +29,19 @@ export default function MyApp() {
 }
 ```
 
+#### Example
+
+<PaymentForm>
+  <GooglePay buttonColor="black" id="rswps-google-pay-button-color-black" />
+  <Divider css={{ height: 0, margin: '12px 0px' }} spanProps={{ css: { display: 'none' } }} />
+  <GooglePay buttonColor="white" id="rswps-google-pay-button-color-white" />
+</PaymentForm>
+
 ## `buttonSizeMode`
 
 Set fitting mode to dynamically size button or fixed size. For more details about the available options, see [GooglePayButtonSizeMode](https://developer.squareup.com/reference/sdks/web/payments/enums/GooglePayButtonSizeMode).
 
-Available values: `static` & `fill`.
+Available values: `static` or `fill`.
 
 ```tsx
 import { GooglePay, PaymentForm } from 'react-square-web-payments-sdk';
@@ -44,11 +55,19 @@ export default function MyApp() {
 }
 ```
 
+#### Example
+
+<PaymentForm>
+  <GooglePay buttonSizeMode="static" id="rswps-google-pay-button-size-mode-static" />
+  <Divider css={{ height: 0, margin: '12px 0px' }} spanProps={{ css: { display: 'none' } }} />
+  <GooglePay buttonSizeMode="fill" id="rswps-google-pay-button-size-mode-fill" />
+</PaymentForm>
+
 ## `buttonType`
 
 Render a long or short button. For more details about the available options, see [GooglePayButtonType](https://developer.squareup.com/reference/sdks/web/payments/enums/GooglePayButtonType).
 
-Available values: `long` & `short`.
+Available values: `long` or `short`.
 
 ```tsx
 import { GooglePay, PaymentForm } from 'react-square-web-payments-sdk';
@@ -61,3 +80,11 @@ export default function MyApp() {
   );
 }
 ```
+
+#### Example
+
+<PaymentForm>
+  <GooglePay buttonType="long" id="rswps-google-pay-button-type-long" />
+  <Divider css={{ height: 0, margin: '12px 0px' }} spanProps={{ css: { display: 'none' } }} />
+  <GooglePay buttonType="short" id="rswps-google-pay-button-type-short" />
+</PaymentForm>

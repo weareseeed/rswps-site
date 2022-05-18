@@ -15,7 +15,9 @@ import PaymentForm from '@site/src/components/PaymentForm';
 
 ### `buttonColor`
 
-Color of the button that initiates the Afterpay/Clearpay flow. Possible values are: `black` and `mint`.
+Color of the button that initiates the Afterpay/Clearpay flow.
+
+Possible values are: `black` or `mint`.
 
 ```tsx
 import { Afterpay, PaymentForm } from 'react-square-web-payments-sdk';
@@ -39,7 +41,9 @@ export default function MyApp() {
 
 ### `buttonType`
 
-The flavor of button to use for your Afterpay/Clearpay flow. This will modify the text. Possible values are: `checkout_with_afterpay`, `buy_now_with_afterpay` and `place_order_with_afterpay`.
+The flavor of button to use for your Afterpay/Clearpay flow. This will modify the text.
+
+Possible values are: `checkout_with_afterpay`, `buy_now_with_afterpay` or `place_order_with_afterpay`.
 
 ```tsx
 import { Afterpay, PaymentForm } from 'react-square-web-payments-sdk';
@@ -65,7 +69,9 @@ export default function MyApp() {
 
 ### `finalCtaButtonType`
 
-The text for the completion button within the Afterpay/Clearpay CTA. Possible values are: `review_my_order` and `buy_now`.
+The text for the completion button within the Afterpay/Clearpay CTA.
+
+Possible values are: `review_my_order` or `buy_now`.
 
 ```tsx
 import { Afterpay, PaymentForm } from 'react-square-web-payments-sdk';
@@ -101,7 +107,7 @@ export default function MyApp() {
 
 See Afterpay/Clearpay's [Badge Themes](https://developers.afterpay.com/afterpay-online/docs/style-installment-messaging#badge-themes) documentation.
 
-Possible values are: `black-on-mint`, `black-on-white`, `mint-on-black` and `white-on-black`.
+Possible values are: `black-on-mint`, `black-on-white`, `mint-on-black` or `white-on-black`.
 
 ```tsx
 import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
@@ -132,7 +138,7 @@ export default function MyApp() {
 
 The style of the button used to display the information modal. See Afterpay/Clearpay's [Customize Text](https://developers.afterpay.com/afterpay-online/docs/advanced-configuration#customize-text) documentation.
 
-Possible values are: `circled-info-icon`, `circled-question-icon`, `learn-more-text`, `more-info-text` and `none`.
+Possible values are: `circled-info-icon`, `circled-question-icon`, `learn-more-text`, `more-info-text` or `none`.
 
 ```tsx
 import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
@@ -164,7 +170,7 @@ export default function MyApp() {
 
 Theme for the information modal. See Afterpay/Clearpay's [Modal Themes](https://developers.afterpay.com/afterpay-online/docs/style-installment-messaging#modal-themes) documentation.
 
-Possible values are: `mint` and `white`.
+Possible values are: `mint` or `white`.
 
 ```tsx
 import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
@@ -199,7 +205,7 @@ Click on the button to see the modal.
 
 The size of the text.
 
-Possible values are: `xs`, `sm`, `md` and `lg`.
+Possible values are: `xs`, `sm`, `md` or `lg`.
 
 ```tsx
 import { AfterpayMessage, AfterpayProvider, PaymentForm } from 'react-square-web-payments-sdk';
