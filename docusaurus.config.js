@@ -23,7 +23,7 @@ const themeConfig = {
         position: 'left',
         label: 'Docs',
       },
-      { to: '/blog', label: 'Blog', position: 'left' },
+      { type: 'docSidebar', sidebarId: 'guides', label: 'Guides', position: 'left' },
       {
         href: 'https://github.com/weareseeed/react-square-web-payments-sdk',
         label: 'GitHub',
@@ -132,10 +132,7 @@ const config = {
       'classic',
       /** @type {import('@docusaurus/preset-classic').Options} */
       ({
-        blog: {
-          editUrl: 'https://github.com/weareseeed/rswps-site/tree/main/',
-          showReadingTime: true,
-        },
+        blog: false,
         docs: {
           editUrl: 'https://github.com/weareseeed/rswps-site/tree/main/',
           sidebarPath: require.resolve('./sidebars.js'),
