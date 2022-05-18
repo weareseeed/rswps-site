@@ -6,6 +6,9 @@ sidebar_label: Props
 sidebar_position: 2
 ---
 
+import { CreditCard } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
 # Props
 
 ## `buttonProps`
@@ -78,9 +81,9 @@ export default function MyApp() {
 
 ## `focus`
 
-Sets the DOM focus of one of the input fields within the credit card form.
+Sets the DOM focus of one of the input fields within the credit card form. For more details about the available options, see [CardFieldNames](https://developer.squareup.com/reference/sdks/web/payments/enums/CardFieldNames).
 
-For more details about the available options, see [CardFieldNames](https://developer.squareup.com/reference/sdks/web/payments/enums/CardFieldNames).
+Possible values are: `cardNumber`, `cvv`, `expirationDate` or `postalCode`. By default the focus is set to `cardNumber`.
 
 ```tsx
 import { CreditCard } from 'react-square-web-payments-sdk';
@@ -88,13 +91,17 @@ import { CreditCard } from 'react-square-web-payments-sdk';
 export default function MyApp() {
   return (
     <PaymentForm>
-      <CreditCard
-        focus="cardNumber" // Can be cardNumber, cvv, expirationDate or postalCode
-      />
+      <CreditCard focus="expirationDate" />
     </PaymentForm>
   );
 }
 ```
+
+#### Example
+
+<PaymentForm>
+  <CreditCard focus="expirationDate" id="rswps-credit-card-focus-expiration-date" />
+</PaymentForm>
 
 ## `includeInputLabels`
 
@@ -111,6 +118,12 @@ export default function MyApp() {
   );
 }
 ```
+
+#### Example
+
+<PaymentForm>
+  <CreditCard id="rswps-credit-card-include-input-labels" includeInputLabels />
+</PaymentForm>
 
 ## `postalCode`
 
