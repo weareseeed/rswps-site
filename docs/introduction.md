@@ -10,7 +10,7 @@ import Tabs from '@theme/Tabs';
 import TabItem from '@theme/TabItem';
 ```
 
-⚡️ This wrapper will help you take payments using Square in no time.
+⚡️ A wrapper will help you take payments using Square in no time.
 
 ⏱ Building custom components every time you need to take a payment is a pain.
 
