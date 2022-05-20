@@ -1,0 +1,36 @@
+---
+id: cash-app-pay-usage
+title: Cash App Pay - Basic Usage
+slug: /cash-app-pay/usage
+sidebar_label: Usage
+sidebar_position: 1
+---
+
+import { CashAppPay } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Basic usage
+
+Take a Cash App Pay payment.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay />
+    </PaymentForm>
+  );
+}
+```
+
+:::info
+
+Cash App Pay is currently supported only in the US.
+
+:::
+
+<PaymentForm>
+  <CashAppPay />
+</PaymentForm>

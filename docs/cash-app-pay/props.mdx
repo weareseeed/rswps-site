@@ -1,0 +1,138 @@
+---
+id: cash-app-pay-props
+title: Cash App Pay - Props
+slug: /cash-app-pay/props
+sidebar_label: Props
+sidebar_position: 2
+---
+
+import { CashAppPay, Divider } from 'react-square-web-payments-sdk';
+import PaymentForm from '@site/src/components/PaymentForm';
+
+# Props
+
+## `callbacks`
+
+Adds an event listener to the CashAppPay instance. Currently only `onTokenization()` is supported.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay
+        callbacks={{
+          onTokenization: (event) => console.info(event),
+        }}
+      />
+    </PaymentForm>
+  );
+}
+```
+
+## `redirectURL`
+
+It is the URL that the user will be redirected to after the payment is completed. Is only for mobile payments and is not used for desktop QR payments.
+
+By default is `window.location.href`.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay redirectURL="https://example.com/thank-you" />
+    </PaymentForm>
+  );
+}
+```
+
+## `referenceId`
+
+Payment identifier value for internal developer use. For example, you use a `referenceId` value to associate the payment with an internal resource.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay referenceId="123456" />
+    </PaymentForm>
+  );
+}
+```
+
+## `shape`
+
+Sets the shape of the payment button.
+
+Available values: `round` or `semiround`.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay shape="round" />
+    </PaymentForm>
+  );
+}
+```
+
+## `size`
+
+Sets the size of the payment button.
+
+Available values: `medium` or `small`.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay size="medium" />
+    </PaymentForm>
+  );
+}
+```
+
+## `values`
+
+Sets the theme of the payment button.
+
+Available values: `dark` or `light`.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay values="dark" />
+    </PaymentForm>
+  );
+}
+```
+
+## `width`
+
+Sets the width of the payment button.
+
+Available values: `full` or `static`.
+
+```tsx
+import { CashAppPay, PaymentForm } from 'react-square-web-payments-sdk';
+
+export default function MyApp() {
+  return (
+    <PaymentForm>
+      <CashAppPay width="static" />
+    </PaymentForm>
+  );
+}
+```
