@@ -147,6 +147,9 @@ const config = {
           editUrl: 'https://github.com/weareseeed/rswps-site/tree/main/',
           sidebarPath: require.resolve('./sidebars.js'),
         },
+        googleAnalytics: {
+          trackingID: 'G-CL2JQ01S7Y',
+        },
         sitemap: {
           changefreq: 'weekly',
           priority: 0.5,
