@@ -177,7 +177,7 @@ export default function MyApp() {
   return (
     <PaymentForm>
       {/* Render your own component using our component as a Prop */}
-      <CreditCard render={({ Button }) => <Button>Pay $10</Button>} />
+      <CreditCard render={(Button) => <Button>Pay $10</Button>} />
     </PaymentForm>
   );
 }
